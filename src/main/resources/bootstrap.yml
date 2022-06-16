@@ -1,0 +1,19 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: coupon-gateway-service
+  profiles:
+    active: dev
+#logging:
+#  level:
+#    com.lighthouse.coupon.user.external: debug
+ribbon:
+  ConnectTimeout: 1000
+  ReadTimeoue: 5000
+  OkToRetryOnAllOperations: true
+
+
+
+

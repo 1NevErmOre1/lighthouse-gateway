@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 81.69.56.96:8848
+        namespace: 60f5a4b9-778f-4dfc-a452-70320988b502
+      config:
+        server-addr: 81.69.56.96:8848
+        namespace: 60f5a4b9-778f-4dfc-a452-70320988b502
+        ext-config:
+          - dataId: lighthouse.yaml
+            group: DATABASE
+            refresh: true
+        file-extension: yaml
+    gateway:
+      discovery:
+        locator:
+          enabled: false
+          lower-case-service-id: true
+
+
+
