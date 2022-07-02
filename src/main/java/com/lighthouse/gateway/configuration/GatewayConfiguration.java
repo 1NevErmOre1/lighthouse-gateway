@@ -16,8 +16,8 @@ public class GatewayConfiguration {
     public RouteLocator routes(RouteLocatorBuilder builder){
         return builder.routes()
                 .route(route -> route
-                        .path("/coupon-user/**")
-                        .uri("lb://coupon-user-service"))
+                        .path("/alpha-user/**")
+                        .uri("lb://alpha-user-service"))
                 .build();
     }
 }

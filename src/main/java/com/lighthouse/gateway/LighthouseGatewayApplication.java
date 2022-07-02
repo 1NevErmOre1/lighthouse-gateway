@@ -9,7 +9,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@MapperScan("com.lighthouse.gateway.dao")
 @EnableDiscoveryClient
 @ComponentScan(basePackages = {"com.lighthouse.gateway.**"})
 @EnableFeignClients(basePackages = {"com.lighthouse.gateway.**"})
